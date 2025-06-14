@@ -45,12 +45,12 @@ metrics_df = pd.DataFrame({
 })
 
 # Print evaluation results
-print("🔍 GMM cluster-to-label mapping:")
+print("GMM cluster-to-label mapping:")
 print(conf_matrix)
-print("\n📊 Performance metrics per label:")
+print("\n Performance metrics per label:")
 print(metrics_df)
 
-# ----------------- 🔵 Visualization -----------------
+# ----------------- Visualization -----------------
 # Reduce data to 2D using PCA for visualization
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X)
